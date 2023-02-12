@@ -526,6 +526,7 @@
 	font-size: 0.9em;
 	text-align: center;
 	margin: 2em 0 1em 0;
+	visibility: hidden !important;
 }
 
 .powered-by-jobadder a {
