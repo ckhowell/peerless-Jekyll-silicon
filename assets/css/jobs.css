@@ -222,7 +222,10 @@
 
 .ja-job-list .job {
 	margin-bottom: 1em;
-	padding: 0.5em;
+	padding: 2em;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px; /* 5px rounded corners */
 }
 
 .ja-job-list .job.alt {

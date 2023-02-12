@@ -154,12 +154,3 @@
 .powered-by-jobadder {
   visibility: hidden;
 }
-
-.job {
-  flex: 1 1 auto;
-  padding: var(--si-card-spacer-y) var(--si-card-spacer-x);
-  color:var(--si-card-color);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-}
