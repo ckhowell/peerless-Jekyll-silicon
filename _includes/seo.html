@@ -71,8 +71,8 @@
 
 {% if image %}
 <meta property="og:image" content="{{ page.image }}">
-{% elsif page_teaser_image %}
-<meta property="og:image" content="{{ page.image }}">
+{% elsif image %}
+<meta property="og:image" content="{{ post.image }}">
 
 {% endif %}
 
