@@ -38,5 +38,5 @@ If not, then it's highly possible that their pipeline isn't full of the right pr
 
 Improving in these areas can make a significant impact on sales performance, so why let it continue? Invest in your team. Our coaching, systems and processes pay for themselves as our priority is to improve your teams win rates.
 
-If this topic relates to your sales team, reach out; let's discuss how to help your sales effectiveness, close more new accounts and sell more new products.
+If this topic relates to your sales team, let's discuss how to help your sales effectiveness, close more new accounts and sell more new products.
 
