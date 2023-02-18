@@ -9,20 +9,23 @@
 {% else %}
   <meta content="website" property="og:type">
 {% endif %}
+
+
 {% if page.description %}
   <meta content="{{ page.description }}" property="og:description">
 {% else %}
   <meta content="{{ site.description }}" property="og:description">
 {% endif %}
+
 {% if page.url %}
   <meta content="{{ site.url }}{{ page.url }}" property="og:url">
 {% endif %}
 {% if page.date %}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="{{ site.url }}/about/" property="article:author">
+  <meta content="{{ page.author }}" property="article:author">
 {% endif %}
 {% if page.image %}
-  <meta content="{{ page.image }}" property="og:image">
+  <meta content="{{ site.baseurl }}/assets/img/og-logo.png" property="og:image">
 {% else %}
   <meta content="{{ site.baseurl }}/assets/img/og-logo.png" property="og:image">
 {% endif %}
