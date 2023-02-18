@@ -7,7 +7,8 @@ avatar: assets/img/avatar/jason-howes-avatar.png
 image: https://source.unsplash.com/random/700×230/?People&orientation=landscape
 category: Sales People
 include_video: false
-video: 
+video:
+logo: logo.svg
 ---
 
 > Let us help you uncover some critical areas and opportunities. Did you know that two dozen variables can determine the skills, experience, capabilities, sales mindset required for salespeople to succeed?

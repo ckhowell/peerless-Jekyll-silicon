@@ -8,6 +8,7 @@ image: https://source.unsplash.com/random/700×230/?search&orientation=landscape
 category: Hiring
 include_video: false
 video: 
+logo: logo.svg
 ---
 
 ## There are at least three keyways on Google.
@@ -26,4 +27,4 @@ video:
 > Do you need help attracting quality salespeople or uncovering more science behind your recruitment process? 
 
 ##### If you want to be a sales superstar and are prepared to put in the hard work to improve so you can get your next dream job, message me. 
-![IMAGE ALT TEXT HERE](/assets/img/articles/finding-sales.jpg)
+![Finidng Sales people](/assets/img/articles/finding-sales.jpg)

@@ -8,6 +8,7 @@ image: https://source.unsplash.com/random/700×230/?city&orientation=landscape
 category: Selling
 include_video: false
 video: 
+logo: logo.svg
 ---
 
 

@@ -8,6 +8,7 @@ image: https://source.unsplash.com/random/700×230/?Success&orientation=landscap
 category: Success
 include_video: true
 video: https://www.youtube.com/embed/S0fFnw_eFBE
+logo: logo.svg
 ---
 
 ### We can help you uncover areas that may be holding your team back from being successful.

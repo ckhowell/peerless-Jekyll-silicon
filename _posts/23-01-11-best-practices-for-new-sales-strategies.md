@@ -8,6 +8,7 @@ image: https://source.unsplash.com/random/700×230/?strategy&orientation=landsca
 category: Best Practices
 include_video: false
 video: 
+logo: logo.svg
 ---
 
 ## Have you hired a new salesperson recently? Or are you implementing a new product segment or growth strategy? 

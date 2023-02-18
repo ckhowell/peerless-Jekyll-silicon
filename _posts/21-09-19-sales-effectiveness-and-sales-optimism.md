@@ -7,6 +7,7 @@ avatar: assets/img/avatar/jason-howes-avatar.png
 intro: Sales effectiveness and sales optimism create a huge opportunity for improvement in sales. Make sure you maximise Friday afternoons, as most clients don't want to see salespeople anyway.  
 image: https://source.unsplash.com/random/700×230/?business&orientation=landscape
 category: Sales
+logo: logo.svg
 ---
 Sales effectiveness and sales optimism creates opportunity for improvement in sales. Make sure you maximise Friday afternoons, as most clients don't want to see salespeople anyway.
 
