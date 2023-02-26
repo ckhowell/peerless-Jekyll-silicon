@@ -31,7 +31,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - css
   - gulpfile.js
   - assets/scss
   - vendor
