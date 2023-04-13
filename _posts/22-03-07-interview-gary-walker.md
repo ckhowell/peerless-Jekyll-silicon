@@ -4,14 +4,26 @@ title: Interview with Gary Walker, Belmont Timber NSW
 author: Jason Howes
 author-contact: mailto:jason@arrowexec.com.au
 avatar: assets/img/avatar/jason-howes-avatar.png
-image: https://source.unsplash.com/random/700×230/?Timber&orientation=landscape
-category: Success
+image: /assets/img/articles/gary-walker.jpg
+category: Interviews
 include_video: true
 video:
 logo: logo.svg
 ---
 
+
+
 ### I caught up with Gary Walker this week, managing director at Belmont Timber NSW. Belmont Timber is a leading supplier of engineered timber to the building industry in NSW, specialising in frame and truss, floor construction and building materials.
+
+<iframe
+    width="1800"
+    height="680"
+    src="https://player.vimeo.com/video/747456586?h=4d77f58084"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 Gary's story and how his strong leadership and supplier relationships built over 70 years enabled his company to operate at a normal capacity through recent times when many other fabrication plants had to scale back due to the availability of products.
 
