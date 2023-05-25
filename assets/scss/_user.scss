@@ -8,7 +8,30 @@
 .vh-90 {
   height: 90vh !important;
 }
+.hero-bg {
+  background-color: #c8ffff;
+}
+.hero-svg {
+  width: 1800px !important;
+}
+.display-hero {
+  font-size: 7.1em;
+  line-height: 1em;
+}
 
+.display-hero  {
+  font-size: calc(2.625rem + 4.5vw);
+  line-height: 1.0;
+}
+@media (min-width: 1200px) {
+  .display-hero  {
+    font-size: 7.1rem;
+  }
+}
+
+.strong {
+  font-weight: bold;
+}
 .navbar-transparent{
   background-color: transparent !important;
 }
@@ -20,6 +43,9 @@
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .hero-svg {
+    padding-top: 3em;
   }
   .page-icon {
     display: none;
