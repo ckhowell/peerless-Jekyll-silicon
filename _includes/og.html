@@ -24,8 +24,8 @@
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
   <meta content="{{ page.author }}" property="article:author">
 {% endif %}
-{% if page.image %}
-  <meta content="{{ site.baseurl }}/assets/img/og-logo.png" property="og:image">
+{% if page.ogimage %}
+  <meta content="{{ site.baseurl }}/assets/img/{{page.ogimage}}" property="og:image">
 {% else %}
   <meta content="{{ site.baseurl }}/assets/img/og-logo.png" property="og:image">
 {% endif %}
