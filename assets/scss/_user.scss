@@ -2,6 +2,10 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
 .vh-80 {
   height: 80vh !important;
 }
