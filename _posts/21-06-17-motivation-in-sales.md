@@ -4,7 +4,7 @@ title: Motivation in sales, learn how we are all motivated
 author: Jason Howes
 author-contact: mailto:jason@arrowexec.com.au
 avatar: assets/img/avatar/jason-howes-avatar.png
-image: https://source.unsplash.com/random/700×230/?Success&orientation=landscape
+image: https://source.unsplash.com/random/700×230/?Motivation&orientation=landscape
 category: Success
 include_video: true
 video: https://www.youtube.com/embed/S0fFnw_eFBE

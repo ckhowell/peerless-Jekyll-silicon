@@ -4,7 +4,7 @@ title: Why are salespeople so different?
 author: Jason Howes
 author-contact: mailto:jason@arrowexec.com.au
 avatar: assets/img/avatar/jason-howes-avatar.png
-image: https://source.unsplash.com/random/700×230/?People&orientation=landscape
+image: https://source.unsplash.com/random/700×230/?sales&orientation=landscape
 category: Sales People
 include_video: false
 video:

@@ -4,7 +4,7 @@ title: How you can sell value over price
 author: Jason Howes
 author-contact: mailto:jason@arrowexec.com.au
 avatar: assets/img/avatar/jason-howes-avatar.png
-image: https://source.unsplash.com/random/700×230/?value&orientation=landscape
+image: https://source.unsplash.com/random/700×230/?selling&orientation=landscape
 category: Sales
 logo: logo.svg
 ---

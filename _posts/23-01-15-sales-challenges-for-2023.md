@@ -4,7 +4,7 @@ title: Getting your sales team ready for a challenging year ahead
 author: Jason Howes
 author-contact: mailto:jason@arrowexec.com.au
 avatar: assets/img/avatar/jason-howes-avatar.png
-image: https://source.unsplash.com/random/700×230/?challenges&orientation=landscape
+image: https://source.unsplash.com/random/700×230/?sales&orientation=landscape
 category: Leadership
 include_video: false
 video: 

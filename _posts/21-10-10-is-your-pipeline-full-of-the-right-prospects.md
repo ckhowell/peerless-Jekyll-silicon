@@ -4,7 +4,7 @@ title: Is your pipeline full of the right prospects
 author: Jason Howes
 author-contact: mailto:jason@arrowexec.com.au
 avatar: assets/img/avatar/jason-howes-avatar.png
-image: https://source.unsplash.com/random/700×230/?city&orientation=landscape
+image: https://source.unsplash.com/random/700×230/?money&orientation=landscape
 category: Selling
 include_video: false
 video: 
