@@ -58,9 +58,11 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.8.0)
+    webrick (1.8.1)
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-22
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
@@ -68,6 +70,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   tzinfo (~> 1.2)
   tzinfo-data
+  webrick (~> 1.8)
 
 BUNDLED WITH
-   2.3.9
+   2.3.26
