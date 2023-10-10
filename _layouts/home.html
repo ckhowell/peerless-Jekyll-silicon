@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <script>document.addEventListener("mouseleave", function(e){
-    if( e.clientY < 0 )
-    {
-        if(Number(sessionStorage.exit_init) != 1){
-            sessionStorage.exit_init = 1;
-            $("#exampleModal").modal()
-        }
-
-    }
-}, false);</script>
   <!-- Body -->
   <body>
+    {% include exit-intent-modal.html %}
 
     <!-- Page loading spinner -->
     <div class="page-loading active">
@@ -26,7 +17,6 @@
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
     <main class="page-wrapper">
       {% include nav.html %}
-      {% include exit-intent-modal.html %}
 
       {{ content }} 
       
