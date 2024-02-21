@@ -11,3 +11,22 @@
 
 <!-- Main Theme Script -->
 <script src="{{site.baseurl}}/assets/js/theme.min.js"></script>
+
+<!-- EVENTBRITE -->
+<script src=https://www.eventbrite.com.au/static/widgets/eb_widgets.js></script>
+ 
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+ 
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '843037657327',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-843037657327',
+        onOrderComplete: exampleCallback
+    });
+</script>
+ 
+ 

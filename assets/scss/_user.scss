@@ -2,6 +2,17 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+.cardstretch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.badge.badge-top {
+position: absolute;
+top: -0.75rem;
+bottom: auto;
+}
 .youtube-video {
   aspect-ratio: 16 / 9;
   width: 100%;
