@@ -44,6 +44,39 @@
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Recruitment</a>
             <ul class="dropdown-menu {{page.dropdown}}">
+              <li>
+                <a href="https://www.quotapath.com/build-sales-compensation-plans" target="_blank" class="dropdown-item fade-page">
+                  Compensation
+                </a>
+              </li>
+              <li>
+                <a href="{{asite.baseurl}}/sales-recruitment/hiring" class="dropdown-item fade-page">
+                  Hiring
+                </a>
+              </li>
+              <li>
+                <a href="{{asite.baseurl}}/sales-recruitment/find-a-job" class="dropdown-item fade-page">
+                  Find a Job
+                </a>
+              </li>
+              <li>
+                <a href="{{asite.baseurl}}/sales-recruitment/onboarding " class="dropdown-item fade-page">
+                  Employee Onboarding
+                </a>
+              </li>
+              <li>
+                <a href="{{asite.baseurl}}/sales-recruitment/sales-candidate-assessment" class="dropdown-item fade-page">
+                  Sales Candidate Assessment
+                </a>
+              </li>
+              <li>
+                <a href="{{asite.baseurl}}/sales-recruitment//DIY-recruitment" class="dropdown-item fade-page">
+                  DIY Recruitment
+                </a>
+              </li>
+
+            </ul>
+            <ul class="dropdown-menu {{page.dropdown}}">
               {% for sales-recruitment in site.pages %}
               {% if sales-recruitment.category == 'sales-recruitment' %}
               <li>
@@ -82,12 +115,6 @@
               {% endif %}
               {% endfor %}
             </ul>
-          </li>
-          <li class="nav-item">
-            <a href="{{site.baseurl}}/hiring" class="nav-link">Hiring</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.quotapath.com/build-sales-compensation-plans/" target="_blank" class="nav-link">Compensation</a>
           </li>
         </ul>
       </div>
