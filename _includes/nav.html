@@ -43,49 +43,37 @@
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Recruitment</a>
-            <ul class="dropdown-menu {{page.dropdown}}">
+            <ul class="dropdown-menu">
               <li>
                 <a href="https://www.quotapath.com/build-sales-compensation-plans" target="_blank" class="dropdown-item fade-page">
                   Compensation
                 </a>
               </li>
               <li>
-                <a href="{{asite.baseurl}}/sales-recruitment/hiring" class="dropdown-item fade-page">
+                <a href="{{site.baseurl}}/sales-recruitment/hiring" class="dropdown-item fade-page">
                   Hiring
                 </a>
               </li>
               <li>
-                <a href="{{asite.baseurl}}/sales-recruitment/find-a-job" class="dropdown-item fade-page">
+                <a href="{{site.baseurl}}/sales-recruitment/find-a-job" class="dropdown-item fade-page">
                   Find a Job
                 </a>
               </li>
               <li>
-                <a href="{{asite.baseurl}}/sales-recruitment/onboarding " class="dropdown-item fade-page">
+                <a href="{{site.baseurl}}/sales-recruitment/onboarding " class="dropdown-item fade-page">
                   Employee Onboarding
                 </a>
               </li>
               <li>
-                <a href="{{asite.baseurl}}/sales-recruitment/sales-candidate-assessment" class="dropdown-item fade-page">
+                <a href="{{site.baseurl}}/sales-recruitment/sales-candidate-assessment" class="dropdown-item fade-page">
                   Sales Candidate Assessment
                 </a>
               </li>
               <li>
-                <a href="{{asite.baseurl}}/sales-recruitment//DIY-recruitment" class="dropdown-item fade-page">
+                <a href="{{site.baseurl}}/sales-recruitment//DIY-recruitment" class="dropdown-item fade-page">
                   DIY Recruitment
                 </a>
               </li>
-
-            </ul>
-            <ul class="dropdown-menu {{page.dropdown}}">
-              {% for sales-recruitment in site.pages %}
-              {% if sales-recruitment.category == 'sales-recruitment' %}
-              <li>
-                <a href="{{site.baseurl}}{{sales-recruitment.url}}" class="dropdown-item fade-page">
-                  {{ sales-recruitment.title }}
-                </a>
-              </li>
-              {% endif %}
-              {% endfor %}
             </ul>
           </li>
           <li class="nav-item dropdown">
