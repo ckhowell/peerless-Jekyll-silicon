@@ -13,29 +13,70 @@ ogimage: og-logo.png
 ---
 
 <!-- Page content -->
-<section class="container mt-4 mb-lg-5 pt-lg-2 pb-5">
+<section class="container ">
   <!-- Page title + Layout switcher + Search form -->
   <div class="container">
     {% include breadcrumb.html %}
   </div>
-  <div class="row align-items-end gy-3 mb-4 pb-lg-3 pb-1">
-    <div class="col-lg-5 col-md-4">
-      <h1 class="display-2 mb-2 mb-md-0">Career Opportunities</h1>
-      <P class="lead pt-4">Explore the job openings below and start your journey towards a rewarding career with us today.</P>
+
+  <div class="row py-5">
+    <!-- Contact links -->
+    <div class="col-xl-4 col-lg-5 pb-4 pb-sm-5 mb-2 mb-sm-0">
+      <div class="pe-lg-4 pe-xl-0">
+        <img src="{{site.baseurl}}/assets/img/icons/resume.svg" alt="recruit icon">
+        <h1 class="display-1 mb-2 mb-md-0 pt-3">Career Opportunities</h1>
+        <P class="lead pt-4">Explore the job openings below and start your journey towards a rewarding career with us today.</P>
+      </div>
+    </div>
+    <!-- Contact form -->
+    <div class="col-xl-6 col-lg-7 offset-xl-2">
+      <div class="card border-light shadow-lg py-3 p-sm-4 p-md-5">
+        <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 rounded-3 d-none d-dark-mode-block"></div>
+        <div class="card-body position-relative zindex-2">
+          <h2 class="card-title pb-3 mb-4">Upload your Resume</h2>
+          <form class="row g-4 needs-validation" novalidate="" name="resume" method="POST" data-netlify="true" action="/success">
+            <div class="col-12">
+              <label for="fn" class="form-label fs-base">Full name</label>
+              <input type="text" class="form-control form-control-lg" id="fn" required>
+              <div class="invalid-feedback">Please enter your full name!</div>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label fs-base">Email address</label>
+              <input type="email" class="form-control form-control-lg" id="email" required>
+              <div class="invalid-feedback">Please provid a valid email address!</div>
+            </div>
+            <div class="col-12">
+              <label for="phone" class="form-label fs-base">Phone</label>
+              <input type="phone" class="form-control form-control-lg" id="phone">
+            </div>
+            <label>
+              <span>Add file:</span>
+              <input name="file" type="file"/>
+            </label>
+            <div class="col-12 pt-2 pt-sm-3">
+              <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
 
-
-  <div class="container">
+<section class="bg-secondary py-5">
+  <div class="container mt-4 mb-lg-5 pt-lg-2 pb-5">
     <div class="row">
+      
         <!-- Item -->
         
-          <div class="col-10 col-xs-12 job" id="ja-jobs-widget">
+          <div class="col-12 col-xs-12" id="ja-jobs-widget">
       
       </div>
     </div>
   </div>
+</section>
+
 
     
     <script>

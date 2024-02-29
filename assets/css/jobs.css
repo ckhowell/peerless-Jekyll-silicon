@@ -1,5 +1,13 @@
 /* Jobs Widget */
 
+.job {
+	background-color: #fff !important;
+}
+
+.view-details {
+	font-size: 18px !important;
+	background-color: #061a5f !important;
+}
 .classifications {
 padding-left: 0 !important;
 font-size: 20px;
