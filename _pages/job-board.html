@@ -36,22 +36,22 @@ ogimage: og-logo.png
           <h2 class="card-title pb-3 mb-4">Upload your Resume</h2>
           <form class="row g-4 needs-validation" novalidate="" name="resume" method="POST" data-netlify="true" action="/success">
             <div class="col-12">
-              <label for="fn" class="form-label fs-base">Full name</label>
-              <input type="text" class="form-control form-control-lg" id="fn" required>
+              <label for="fn"  class="form-label fs-base">Full name</label>
+              <input type="text" name="FullName" class="form-control form-control-lg" id="fn" required>
               <div class="invalid-feedback">Please enter your full name!</div>
             </div>
             <div class="col-12">
               <label for="email" class="form-label fs-base">Email address</label>
-              <input type="email" class="form-control form-control-lg" id="email" required>
+              <input type="email" name="Email" class="form-control form-control-lg" id="email" required>
               <div class="invalid-feedback">Please provid a valid email address!</div>
             </div>
             <div class="col-12">
               <label for="phone" class="form-label fs-base">Phone</label>
-              <input type="phone" class="form-control form-control-lg" id="phone">
+              <input type="phone" name="Phone" class="form-control form-control-lg" id="phone">
             </div>
-            <label>
-              <span>Add file:</span>
-              <input name="file" type="file"/>
+            <label class="form-label fs-base">
+              <span>Add Resume:</span>
+              <input name="Resume" type="file"/>
             </label>
             <div class="col-12 pt-2 pt-sm-3">
               <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Submit</button>
