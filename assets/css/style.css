@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap");
+
+:root {
+  --image-padding: 0px;
+  font-size: 16px;
+  font-family: "B612 Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.horizontal-slider {
+  display: flex;
+  overflow-x: hidden;
+  height: calc(100vh - 2 * var(--image-padding));
+  padding: var(--image-padding) 0;
+}
+
+.horizontal-slider img {
+  height: 100%;
+  padding-left: var(--image-padding);
+  width: auto;
+}
+
+.horizontal-slider img:last-child {
+  padding-right: var(--image-padding);
+}
+
+.navbar {
+  width: 15vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  padding: 0px 0px;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.levels{
+ padding-right: 18px;
+}
+.side-nav {
+  width: 15vw;
+  position: fixed;
+  right: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 4px 0px;
+  height: auto;
+  outline: none;
+  padding: 8px 0;
+}
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255, 1);
+  transition: all 0.5s ease;
+}
+.selected {
+  height: 1px;
+  width: 1px;
+  border-radius: 5px;
+  background: black;
+  transition: all 0.5s ease;
+}
+.tooltip {
+  margin-right: -20px;
+  margin-top: -8px;
+  background-color: white;
+  padding: 4px 8px;
+  cursor: default;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 2;
+}
+.text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+.item:hover > .tooltip {
+  opacity: 1;
+}
+.item:hover > .circle {
+  transform: scale(0.1);
+}
+.item:focus > .circle {
+  background: rgb(255, 255, 255, 1);
+  transform: scale(1);
+}
+.item:focus > .tooltip {
+  transition-delay: 1200s;
+}
+.item:focus:hover > .tooltip {
+  transition-delay: 0s;
+}
+.item:not(:focus):not(:hover) > .tooltip {
+  transition: none;
+}
+
+/* TOP NAV */
+
+.hide {
+  visibility: hidden;
+}
+.menu {
+  padding-bottom: 60px;
+
+}
+.menu__item {
+  fill: #fff;
+  opacity: 0.2;
+  transition: fill var(--duration) ease-out;
+  transition: opacity var(--duration) ease-out;
+  z-index: 100;
+}
+.active {
+  fill: #fff;
+  opacity: 1;
+}
+.menu__item:hover {
+  opacity: 1;
+}
+#donut{opacity:0.1;}
+.st7{fill:#FFFFFF;}
+

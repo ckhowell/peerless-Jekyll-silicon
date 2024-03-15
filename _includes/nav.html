@@ -1,124 +1,238 @@
-<!-- Navbar -->
-<!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+<div class="side-nav">
+  <nav class="navbar">
+    <div class="menu">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 120 120"
+        width="150px"
+        style="enable-background: new 0 0 120 120"
+        xml:space="preserve"
+      >
+        <g id="Donut">
+          <linearGradient
+            id="donut_00000113335137010935050900000001015468419275396010_"
+            gradientUnits="userSpaceOnUse"
+            x1="82.0921"
+            y1="28.7505"
+            x2="39.4009"
+            y2="89.1375"
+          >
+            <stop offset="0" style="stop-color: #ffffff" />
+            <stop offset="0.5072" style="stop-color: #ffffff; stop-opacity: 0.4814" />
+            <stop offset="1" style="stop-color: #ffffff" />
+          </linearGradient>
 
-<header class="header navbar navbar-expand-lg {{page.nav}} navbar-sticky">
-  <div class="container px-3">
-    <a href="{{site.baseurl}}/" class="navbar-brand pe-3">
-      <img src="{{site.baseurl}}/assets/img/{{page.logo}}" alt="Arrow Logo">
-    </a>
-    <div id="navbarNav" class="offcanvas offcanvas-end {{page.colour}}">
-      <div class="offcanvas-header border-bottom border-light">
-        <h5 class="offcanvas-title {{page.menu}}">Menu</h5>
-        <button type="button" class="btn-close {{page.button}}" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Why Arrow</a>
-            <ul class="dropdown-menu {{page.dropdown}}">
-              {% for why-arrow in site.pages %}
-              {% if why-arrow.category == 'why-arrow' %}
-              <li>
-                <a href="{{site.baseurl}}{{why-arrow.url}}" class="dropdown-item fade-page">
-                  {{ why-arrow.title }}
-                </a>
-              </li>
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Sales Training</a>
-            <ul class="dropdown-menu {{page.dropdown}}">
-              {% for sales-training in site.pages %}
-              {% if sales-training.category == 'sales-training' %}
-              <li>
-                <a href="{{site.baseurl}}{{sales-training.url}}" class="dropdown-item fade-page">
-                  {{ sales-training.title }}
-                </a>
-              </li>
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Recruitment</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="https://www.quotapath.com/build-sales-compensation-plans" target="_blank" class="dropdown-item fade-page">
-                  Compensation
-                </a>
-              </li>
-              <li>
-                <a href="{{site.baseurl}}/sales-recruitment/hiring" class="dropdown-item fade-page">
-                  Hiring
-                </a>
-              </li>
-              <li>
-                <a href="{{site.baseurl}}/sales-recruitment/find-a-job" class="dropdown-item fade-page">
-                  Find a Job
-                </a>
-              </li>
-              <li>
-                <a href="{{site.baseurl}}/sales-recruitment/onboarding " class="dropdown-item fade-page">
-                  Employee Onboarding
-                </a>
-              </li>
-              <li>
-                <a href="{{site.baseurl}}/sales-recruitment/sales-candidate-assessment" class="dropdown-item fade-page">
-                  Sales Candidate Assessment
-                </a>
-              </li>
-              <li>
-                <a href="{{site.baseurl}}/sales-recruitment//DIY-recruitment" class="dropdown-item fade-page">
-                  DIY Recruitment
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">CRM</a>
-            <ul class="dropdown-menu {{page.dropdown}}">
-              {% for crm in site.pages %}
-              {% if crm.category == 'crm' %}
-              <li>
-                <a href="{{site.baseurl}}{{crm.url}}" class="dropdown-item fade-page">
-                  {{ crm.title }}
-                </a>
-              </li>
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Resources</a>
-            <ul class="dropdown-menu {{page.dropdown}}">
-              {% for resources in site.pages %}
-              {% if resources.category == 'resources' %}
-              <li>
-                <a href="{{site.baseurl}}{{resources.url}}" class="dropdown-item fade-page">
-                  {{ resources.title }}
-                </a>
-              </li>
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="offcanvas-header border-top border-light">
-        <a href="{{site.url}}/contact" class="btn btn-primary w-100"  rel="noopener">
-          <i class="bx bx-envelope fs-4 lh-1 me-1"></i>
-          &nbsp;Contact
-        </a>
-      </div>      
+          <circle id="donut" style="opacity: 0.2; fill: url(#donut_00000113335137010935050900000001015468419275396010_)" cx="60" cy="60" r="37.9" />
+        </g>
+        <g id="Quadrants">
+          <!-- NORTH WEST -->
+          <radialGradient id="NW_00000114763851438405474440000012442751103782160030_" cx="59.5088" cy="59.9512" r="50.6852" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color: #ffffff" />
+            <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
+          </radialGradient>
+          <path
+            class="menu__item"
+            id="NW"
+            style="fill: url(#NW_00000114763851438405474440000012442751103782160030_)"
+            d="M60,18c-23.2,0-42,18.8-42,42h17
+       c0-13.8,11.2-25,25-25V18z"
+          />
+          <!-- NORTH EAST -->
+          <radialGradient id="NE_00000085219394941459451250000005747500673747690410_" cx="59.5088" cy="59.9512" r="50.6852" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color: #ffffff" />
+            <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
+          </radialGradient>
+          <path
+            class="menu__item"
+            id="NE"
+            style="fill: url(#NE_00000085219394941459451250000005747500673747690410_)"
+            d="M102,60c0-23.2-18.8-42-42-42v17
+       c13.8,0,25,11.2,25,25H102z"
+          />
+          <!-- SOUTH EAST -->
+          <radialGradient id="SE_00000132795592471879311080000015140717837242027392_" cx="59.5088" cy="59.9512" r="50.6852" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color: #ffffff" />
+            <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
+          </radialGradient>
+          <path
+            class="menu__item"
+            id="SE"
+            style="fill: url(#SE_00000132795592471879311080000015140717837242027392_)"
+            d="M60,102c23.2,0,42-18.8,42-42H85
+       c0,13.8-11.2,25-25,25V102z"
+          />
+          <!-- SOUTH WEST -->
+          <radialGradient id="SW_00000102516486818712509680000014335767113232881058_" cx="59.5088" cy="59.9512" r="50.6852" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color: #ffffff" />
+            <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
+          </radialGradient>
+          <path
+            class="menu__item"
+            id="SW"
+            style="fill: url(#SW_00000102516486818712509680000014335767113232881058_)"
+            d="M18,60c0,23.2,18.8,42,42,42V85
+       c-13.8,0-25-11.2-25-25H18z"
+          />
+          <!-- NORTH -->
+          <radialGradient
+            id="North_00000145032022784767595880000012989341309483153590_"
+            cx="60.6148"
+            cy="59.9512"
+            r="29.2826"
+            gradientTransform="matrix(-1 0 0 -1 120 120)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" style="stop-color: #ffffff" />
+            <stop offset="0.8228" style="stop-color: #ffffff; stop-opacity: 0" />
+          </radialGradient>
+          <path
+            class="menu__item active"
+            id="North"
+            style="fill: url(#North_00000145032022784767595880000012989341309483153590_)"
+            d="M35,60c0-13.8,11.2-25,25-25
+       c13.8,0,25,11.2,25,25H35z"
+          />
+          <!-- SOUTH -->
+          <radialGradient id="South_00000098902015343643463830000017161695652808469404_" cx="59.73" cy="60.0618" r="25.3559" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color: #ffffff" />
+            <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
+          </radialGradient>
+          <path
+            class="menu__item"
+            id="South"
+            style="fill: url(#South_00000098902015343643463830000017161695652808469404_)"
+            d="M85,60c0,13.8-11.2,25-25,25
+       S35,73.8,35,60H85z"
+          />
+        </g>
+        <g id="EW-Letter">
+          <g id="WE_Letters">
+            <g>
+              <path
+                class="st7"
+                d="M117.1,62.4l-0.2,1.4h-5.8l0.1-1.4v-6.2l-0.2-1.4h5.8v1.4h-3.6l0.1,0.8v1.3h3.1v1.3h-3.1v2.1v0.8L117.1,62.4
+           L117.1,62.4z"
+              />
+            </g>
+            <g>
+              <path
+                class="st7"
+                d="M4.6,54.7L5.3,58v3.4h0.1l0.3-1.8L6,57.8h1.4l0.3,1.8L8,61.4l0,0v-3.3l0.6-3.3h1.7l-1.6,9H7.2L6.9,62
+           l-0.2-2.1L6.4,62L6,63.8H4.5c-0.1-0.9-0.3-1.8-0.4-2.7c-0.1-0.8-0.3-1.6-0.4-2.3c-0.1-0.7-0.3-1.4-0.4-2.1S3,55.4,2.9,54.8
+           L4.6,54.7z"
+              />
+            </g>
+          </g>
+          <path
+            id="N-Letter"
+            class="st7"
+            d="M60.6,10.6l-2.9-5.7h-0.1L58,6.7v3.9h-1.9V3l-0.2-1.4l2-0.1L60.7,7h0.1l-0.4-1.5V1.6l1.9-0.1
+       v9.1H60.6z"
+          />
+          <g id="S-Letter">
+            <path
+              class="st7"
+              d="M61.5,110.8c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.1-0.4-0.2s-0.2-0.1-0.4-0.1c-0.1,0-0.2,0-0.3,0
+         s-0.3,0-0.4,0c-0.1,0-0.3,0.1-0.4,0.1c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.1-0.1,0.3-0.1,0.4c0,0.2,0,0.3,0.1,0.4s0.2,0.2,0.3,0.3
+         c0.1,0.1,0.3,0.2,0.5,0.3c0.2,0.1,0.3,0.2,0.5,0.2c0.3,0.1,0.6,0.3,0.9,0.5c0.3,0.2,0.6,0.4,0.8,0.6s0.5,0.5,0.6,0.8
+         s0.2,0.6,0.2,1c0,0.5-0.1,0.9-0.3,1.2c-0.2,0.3-0.4,0.6-0.8,0.9c-0.3,0.2-0.7,0.4-1.1,0.5s-0.8,0.2-1.3,0.2s-1-0.1-1.4-0.2
+         s-0.9-0.3-1.3-0.6l0.8-1.4c0.1,0.1,0.2,0.1,0.4,0.2s0.3,0.2,0.5,0.2c0.2,0.1,0.3,0.1,0.5,0.2s0.3,0.1,0.5,0.1s0.4,0,0.5-0.1
+         c0.2,0,0.3-0.1,0.5-0.2c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.1,0.1-0.3,0.1-0.6c0-0.2,0-0.4-0.1-0.6s-0.2-0.3-0.4-0.4s-0.3-0.2-0.5-0.3
+         c-0.2-0.1-0.4-0.2-0.6-0.3c-0.3-0.1-0.6-0.3-0.8-0.4c-0.3-0.2-0.5-0.3-0.7-0.5s-0.4-0.4-0.5-0.6s-0.2-0.5-0.2-0.8
+         c0-0.4,0.1-0.8,0.3-1.1s0.4-0.6,0.7-0.8s0.6-0.4,1-0.5s0.7-0.2,1.1-0.2c0.5,0,0.9,0.1,1.3,0.2c0.4,0.1,0.9,0.4,1.3,0.7L61.5,110.8
+         z"
+            />
+          </g>
+        </g>
+        <g id="center">
+          <circle id="center_dot" class="st7" cx="60" cy="60" r="4.7" />
+        </g>
+      </svg>
     </div>
-    <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a href="{{site.baseurl}}/contact" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" rel="noopener">
-      <i class="bx bx-envelope fs-5 lh-1 me-1"></i>
-      &nbsp;Contact
-    </a>
-  </div>
-</header>
+    <!-- LEVELS -->
+    <div class="levels">
+      <div class="item" tabindex="0">
+        <div class="tooltip active">
+          <span class="text ">26</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">25</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">24</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">22</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">20</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">18</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">16</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">14</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">12</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">10</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">08</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">06</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="item" tabindex="0">
+        <div class="tooltip">
+          <span class="text">04</span>
+        </div>
+        <div class="circle"></div>
+      </div>
+    </div> 
+  </nav>
+</div>
