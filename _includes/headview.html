@@ -1,21 +1,23 @@
 <head>
-    <meta charset="utf-8">
-    
-    <!-- Viewport-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>
+    {%- if page.url contains 'ne' -%} {% for item in site.data.info.ne %} {{item.title}} {% endfor %} {%- elsif page.url contains 'se' -%} {% for item in
+    site.data.info.se %} {{item.title}} {% endfor %} {%- elsif page.url contains 'nw' -%} {%- elsif page.url contains 'sw' -%} {%- endif -%}
+  </title>
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="{{site.baseurl}}/assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="{{site.baseurl}}/assets/favicon/safari-pinned-tab.svg" color="#6366f1">
-    <link rel="shortcut icon" href="{{site.baseurl}}/assets/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#080032">
-    <meta name="msapplication-config" content="{{site.baseurl}}/assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+  <!-- Favicon and Touch Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/assets/favicon/favicon-16x16.png" />
+  <link rel="mask-icon" href="{{site.baseurl}}/assets/favicon/safari-pinned-tab.svg" color="#6366f1" />
+  <link rel="shortcut icon" href="{{site.baseurl}}/assets/favicon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#080032" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <!-- Vendor Styles-->
-    <link rel="stylesheet" media="screen" href="{{site.baseurl}}/assets/css/style.css">
-
-  </head>
+  <!-- Vendor Styles-->
+  <link rel="stylesheet" media="screen" href="{{site.baseurl}}/assets/style.css" />
+  <!-- Main Theme Styles + Bootstrap-->
+  <!-- <link rel="stylesheet" media="screen" href="{{site.baseurl}}/assets/css/theme.min.css" /> -->
+</head>

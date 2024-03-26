@@ -1,0 +1,7 @@
+{{page.url}}
+  <ul>
+    {% for item in site.data.info.ne %}
+    <li><a class="{%- if page.url == item.link -%} on {% endif %}" href="{{item.link}}">
+    {{item.level}}</a></li>
+  {% endfor %}
+  </ul>

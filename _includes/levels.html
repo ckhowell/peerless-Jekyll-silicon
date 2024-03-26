@@ -1,0 +1,89 @@
+<div class="side-nav">
+  <nav class="navbar-side">
+    <!-- NORTHEAST -->
+    {%- if page.url contains 'northeast' -%}
+    <div class="levels">
+      {% for item in site.data.info.ne %}
+      <a class="{%- if page.url == item.link -%} active {% endif %}" href="{{item.link}}">
+        <div class="item{% if page.url == item.link %} active{% endif %}">
+          <div class="tooltip {% if page.url == item.link %} active{% endif %}">
+            <span class="text">{{ item.level }}</span>
+          </div>
+          <div class="circle"></div>
+        </div>
+        {% endfor %}
+      </a>
+    </div>
+    <!-- NORTHWEST -->
+    {%- elsif page.url contains 'northwest' -%}
+    <div class="levels">
+      {% for item in site.data.info.nw %}
+      <a class="{%- if page.url == item.link -%} active {% endif %}" href="{{item.link}}">
+        <div class="item{% if page.url == item.link %} active{% endif %}">
+          <div class="tooltip {% if page.url == item.link %} active{% endif %}">
+            <span class="text">{{ item.level }}</span>
+          </div>
+          <div class="circle"></div>
+        </div>
+        {% endfor %}
+      </a>
+    </div>
+    <!-- SOUTHWEST     -->
+    {%- elsif page.url contains 'southwest' -%}
+    <div class="levels">
+      {% for item in site.data.info.sw %}
+      <a class="{%- if page.url == item.link -%} active {% endif %}" href="{{item.link}}">
+        <div class="item{% if page.url == item.link %} active{% endif %}">
+          <div class="tooltip {% if page.url == item.link %} active{% endif %}">
+            <span class="text">{{ item.level }}</span>
+          </div>
+          <div class="circle"></div>
+        </div>
+        {% endfor %}
+      </a>
+    </div>
+    <!-- SOUTHEAST -->
+    {%- elsif page.url contains 'southeast' -%}
+    <div class="levels">
+      {% for item in site.data.info.se %}
+      <a class="{%- if page.url == item.link -%} active {% endif %}" href="{{item.link}}">
+        <div class="item{% if page.url == item.link %} active{% endif %}">
+          <div class="tooltip {% if page.url == item.link %} active{% endif %}">
+            <span class="text">{{ item.level }}</span>
+          </div>
+          <div class="circle"></div>
+        </div>
+        {% endfor %}
+      </a>
+    </div>
+    <!-- SOUTH -->
+    {%- elsif page.url contains 'south' -%}
+    <div class="levels">
+      {% for item in site.data.info.ss %}
+      <a class="{%- if page.url == item.link -%} active {% endif %}" href="{{item.link}}">
+        <div class="item{% if page.url == item.link %} active{% endif %}">
+          <div class="tooltip {% if page.url == item.link %} active{% endif %}">
+            <span class="text">{{ item.level }}</span>
+          </div>
+          <div class="circle"></div>
+        </div>
+        {% endfor %}
+      </a>
+    </div>
+    <!-- NORTH -->
+    {%- elsif page.url contains 'north' -%}
+    <div class="levels">
+      {% for item in site.data.info.nn %}
+      <a class="{%- if page.url == item.link -%} active {% endif %}" href="{{item.link}}">
+        <div class="item{% if page.url == item.link %} active{% endif %}">
+          <div class="tooltip {% if page.url == item.link %} active{% endif %}">
+            <span class="text">{{ item.level }}</span>
+          </div>
+          <div class="circle"></div>
+        </div>
+        {% endfor %}
+      </a>
+    </div>
+    {%- endif -%}
+  </nav>
+</div>

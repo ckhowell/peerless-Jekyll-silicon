@@ -1,0 +1,287 @@
+ne:
+  - level: 25
+    link: /northeast/25/
+    direction: ne
+    img: assets/img/ne_25.jpg
+    title: North East Level 25
+  - level: 24
+    link: /northeast/24/
+    img: assets/img/ne_24.jpg
+    title: North East Level 24
+  - level: 22
+    link: /northeast/22/
+    img: assets/img/ne_22.jpg
+    title: North East Level 22    
+  - level: 20
+    link: /northeast/20/
+    img: assets/img/ne_20.jpg
+    title: North East Level 20    
+  - level: 18
+    link: /northeast/18/
+    img: assets/img/ne_18.jpg
+    title: North East Level 18    
+  - level: 16
+    link: /northeast/16/
+    img: assets/img/ne_16.jpg
+    title: North East Level 16    
+  - level: 14
+    link: /northeast/14/
+    img: assets/img/ne_14.jpg
+    title: North East Level 14    
+  - level: 12
+    link: /northeast/12/
+    img: assets/img/ne_12.jpg
+    title: North East Level 12    
+  - level: 10
+    link: /northeast/10/
+    img: assets/img/ne_10.jpg
+    title: North East Level 10
+  - level: "08"
+    link: /northeast/08/
+    img: assets/img/ne_8.jpg
+    title: North East Level 8
+  - level: "06"
+    link: /northeast/06/
+    img: assets/img/ne_6.jpg
+    title: North East Level 6
+  - level: "04"
+    link: /northeast/04/
+    img: assets/img/ne_4.jpg
+    title: North East Level 4
+nw:
+  - level: 25
+    link: /northwest/25/
+    img: assets/img/nw_25.jpg
+    title: North West Level 25
+  - level: 24
+    link: /northwest/24/
+    img: assets/img/nw_24.jpg
+    title: North West Level 24
+  - level: 22
+    link: /northwest/22/
+    img: assets/img/nw_22.jpg
+    title: North West Level 22    
+  - level: 20
+    link: /northwest/20/
+    img: assets/img/nw_20.jpg
+    title: North West Level 20    
+  - level: 18
+    link: /northwest/18/
+    img: assets/img/nw_18.jpg
+    title: North West Level 18    
+  - level: 16
+    link: /northwest/16/
+    img: assets/img/nw_16.jpg
+    title: North West Level 16    
+  - level: 14
+    link: /northwest/14/
+    img: assets/img/nw_14.jpg
+    title: North West Level 14    
+  - level: 12
+    link: /northwest/12/
+    img: assets/img/nw_12.jpg
+    title: North West Level 12    
+  - level: 10
+    link: /northwest/10/
+    img: assets/img/nw_10.jpg
+    title: North West Level 10
+  - level: "08"
+    link: /northwest/08/
+    img: assets/img/nw_8.jpg
+    title: North West Level 8
+  - level: "06"
+    link: /northwest/06/
+    img: assets/img/nw_6.jpg
+    title: North West Level 6
+  - level: "04"
+    link: /northwest/04/
+    img: assets/img/nw_4.jpg
+    title: North West Level 4
+se:
+  - level: 25
+    link: /southeast/25/
+    img: assets/img/se_25.jpg
+    title: South East Level 25
+  - level: 24
+    link: /southeast/24/
+    img: assets/img/se_24.jpg
+    title: South East Level 24
+  - level: 22
+    link: /southeast/22/
+    img: assets/img/se_22.jpg
+    title: South East Level 22    
+  - level: 20
+    link: /southeast/20/
+    img: assets/img/se_20.jpg
+    title: South East Level 20    
+  - level: 18
+    link: /southeast/18/
+    img: assets/img/se_18.jpg
+    title: South East Level 18    
+  - level: 16
+    link: /southeast/16/
+    img: assets/img/se_16.jpg
+    title: South East Level 16    
+  - level: 14
+    link: /southeast/14/
+    img: assets/img/se_14.jpg
+    title: South East Level 14    
+  - level: 12
+    link: /southeast/12/
+    img: assets/img/se_12.jpg
+    title: South East Level 12    
+  - level: 10
+    link: /southeast/10/
+    img: assets/img/se_10.jpg
+    title: South East Level 10
+  - level: "08"
+    link: /southeast/08/
+    img: assets/img/se_8.jpg
+    title: South East Level 8
+  - level: "06"
+    link: /southeast/06/
+    img: assets/img/se_6.jpg
+    title: South East Level 6
+  - level: "04"
+    link: /southeast/04/
+    img: assets/img/se_4.jpg
+    title: South East Level 4
+sw:
+  - level: 25
+    link: /southwest/25/
+    img: assets/img/sw_25.jpg
+    title: South West Level 25
+  - level: 24
+    link: /southwest/24/
+    img: assets/img/sw_24.jpg
+    title: South West Level 24
+  - level: 22
+    link: /southwest/22/
+    img: assets/img/sw_22.jpg
+    title: South West Level 22    
+  - level: 20
+    link: /southwest/20/
+    img: assets/img/sw_20.jpg
+    title: South West Level 20    
+  - level: 18
+    link: /southwest/18/
+    img: assets/img/sw_18.jpg
+    title: South West Level 18    
+  - level: 16
+    link: /southwest/16/
+    img: assets/img/sw_16.jpg
+    title: South West Level 16    
+  - level: 14
+    link: /southwest/14/
+    img: assets/img/sw_14.jpg
+    title: South West Level 14    
+  - level: 12
+    link: /southwest/12/
+    img: assets/img/sw_12.jpg
+    title: South West Level 12    
+  - level: 10
+    link: /southwest/10/
+    img: assets/img/sw_10.jpg
+    title: South West Level 10
+  - level: "08"
+    link: /southwest/08/
+    img: assets/img/sw_8.jpg
+    title: South West Level 8
+  - level: "06"
+    link: /southwest/06/
+    img: assets/img/sw_6.jpg
+    title: South West Level 6
+  - level: "04"
+    link: /southwest/04/
+    img: assets/img/sw_4.jpg
+    title: South West Level 4
+nn:
+  - level: 36
+    link: /north/36/
+    img: assets/img/n_36.jpg
+    title: North Level 36
+  - level: 35
+    link: /north/35/
+    img: assets/img/n_36.jpg
+    title: North Level 35
+  - level: 34
+    link: /north/34/
+    img: assets/img/n_34.jpg
+    title: North Level 34
+  - level: 33
+    link: /north/33/
+    img: assets/img/n_33.jpg
+    title: North Level 33
+  - level: 32
+    link: /north/32/
+    img: assets/img/n_32.jpg
+    title: North Level 32
+  - level: 31
+    link: /north/31/
+    img: assets/img/n_31.jpg
+    title: North Level 31
+  - level: 30
+    link: /north/30/
+    img: assets/img/n_30.jpg
+    title: North Level 30
+  - level: 29
+    link: /north/29/
+    img: assets/img/n_29.jpg
+    title: North Level 29
+  - level: 28
+    link: /north/28/
+    img: assets/img/n_28.jpg
+    title: North Level 28
+  - level: 27
+    link: /north/27/
+    img: assets/img/n_27.jpg
+    title: North Level 27
+  - level: 26
+    link: /north/26/
+    img: assets/img/n_26.jpg
+    title: North Level 26
+ss:
+  - level: 36
+    link: /south/36/
+    img: assets/img/s_36.jpg
+    title: South Level 36
+  - level: 35
+    link: /south/35/
+    img: assets/img/s_35.jpg
+    title: South Level 35
+  - level: 34
+    link: /south/34/
+    img: assets/img/s_34.jpg
+    title: South Level 34
+  - level: 33
+    link: /south/33/
+    img: assets/img/s_33.jpg
+    title: South Level 33
+  - level: 32
+    link: /south/32/
+    img: assets/img/s_32.jpg
+    title: South Level 32
+  - level: 31
+    link: /south/31/
+    img: assets/img/s_31.jpg
+    title: South Level 31
+  - level: 30
+    link: /south/30/
+    img: assets/img/s_30.jpg
+    title: South Level 30
+  - level: 29
+    link: /south/29/
+    img: assets/img/s_29.jpg
+    title: South Level 29
+  - level: 28
+    link: /south/28/
+    img: assets/img/s_28.jpg
+    title: South Level 28
+  - level: 27
+    link: /south/27/
+    img: assets/img/s_27.jpg
+    title: South Level 27
+  - level: 26
+    link: /south/26/
+    img: assets/img/s_26.jpg
+    title: South Level 26

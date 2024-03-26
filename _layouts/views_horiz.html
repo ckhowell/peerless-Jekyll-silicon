@@ -2,11 +2,12 @@
 <html lang="en">
   {% include headview.html %}
   <!-- Body -->
-  <body style="background-color: black">
+  <body>
     <!-- Page loading spinner -->
 
     <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    {% include levels.html %}
 
     {{ content }}
 
@@ -51,7 +52,7 @@
       });
     </script>
 <!-- CHECK FOR ACTIVE -->
-    <script>
+    <!-- <script>
       const navLinkEls = document.querySelectorAll(".menu__item");
       navLinkEls.forEach((navLinkEl) => {
         navLinkEl.addEventListener("click", () => {
@@ -59,7 +60,7 @@
           navLinkEl.classList.add("active");
         });
       });
-    </script>
+    </script> -->
 
   </body>
 </html>

@@ -1,0 +1,30 @@
+
+<div class="tabs__nav">
+  <ul class="tabs__nav-list">
+    <li class="tabs__nav-item {% if page.direction contains 'nn' %}  active {% endif %}">
+      <a href="{{site.baseurl}}/north/36">NORTH</a>
+    </li>
+
+
+    <!-- NORTHEAST -->
+    <li class="tabs__nav-item {% if page.direction contains 'ne' %}  active {% endif %}">
+      <a href="{{site.baseurl}}/northeast/25">NORTH EAST</a>
+
+    </li>
+
+    <li class="tabs__nav-item {% if page.direction contains 'se' %}  active {% endif %}">
+      <a href="{{site.baseurl}}/southeast/25">SOUTH EAST</a>
+    </li>
+
+    <li class="tabs__nav-item {% if page.direction contains 'ss' %}  active {% endif %}">
+      <a href="{{site.baseurl}}/south/36">SOUTH</a>
+    </li>
+
+    <li class="tabs__nav-item {% if page.direction contains 'sw' %}  active {% endif %}">
+      <a href="{{site.baseurl}}/southwest/25">SOUTH WEST</a>
+    </li>
+    <li class="tabs__nav-item {% if page.direction contains 'nw' %}  active {% endif %}">
+      <a href="{{site.baseurl}}/northwest/25">NORTH WEST</a>
+    </li>
+  </ul>
+</div>

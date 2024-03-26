@@ -1,0 +1,30 @@
+---
+layout: views
+title: Awesome Shoes
+direction: se
+---
+{%- if page.url contains 'northeast' -%}
+        <h1>North East</h1>
+        {% for item in site.data.info.ne %}
+        {{item.level}}
+        {% endfor %}
+    {%- elsif page.url contains 'se' -%}
+        <h1>South East</h1>
+        {% for item in site.data.info.se %}
+        {{item.level}}
+        {% endfor %}
+    {%- elsif page.url contains 'nw' -%}
+        <h1>North West</h1>
+    {%- elsif page.url contains 'sw' -%}
+        <h1>South West</h1>
+{%- endif -%}
+
+
+
+
+
+
+
+
+
+

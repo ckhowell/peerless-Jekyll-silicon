@@ -10,6 +10,27 @@ google_analytics: UA-165678042-1
 permalink: pretty
 permalink: /articles/:title/
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true  
+
+collections:
+  - north
+  - south
+  - northeast
+  - southeast
+  - northwest
+  - southwest
+
+# Navigation data
+navigation: /data/sections.yml # Path to your navigation data file
+
+# Include _data directory
+include:
+  - _data
+
 include:
   - _pages
   - _redirects

@@ -1,0 +1,183 @@
+---
+layout: home
+title: Awesome Shoes
+permalink: cons
+direction: se
+---
+
+<h1>DATA URLS</h1>
+
+    {%- if page.url contains 'ne' -%}
+        <h1>North East</h1>
+        {% for item in site.data.info.ne %}
+        {{item.level}}
+        {% endfor %}
+    {%- elsif page.url contains 'se' -%}
+        <h1>South East</h1>
+        {% for item in site.data.info.se %}
+        {{item.level}}
+        {% endfor %}
+    {%- elsif page.url contains 'nw' -%}
+        <h1>North West</h1>
+    {%- elsif page.url contains 'sw' -%}
+        <h1>South West</h1>
+{%- endif -%}
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<ul>
+    {% for item in site.data.sections %}
+      <li>
+          {{ item.name }}
+      </li>
+    {% endfor %}
+</ul>
+<br>
+
+    {% for item in site.data.info.se %}
+    <a class="{%- if page.url == item.link -%} active {% endif %}" href="{{item.link}}">
+            {{ item.level }}
+      {% endfor %}
+    </a>
+
+
+    {%- if page.direction contains 'ne' -%}
+        <h1>North East</h1>
+        {% for item in site.data.info.ne %}
+        {{item.level}}
+        {% endfor %}
+    {%- elsif page.direction contains 'se' -%}
+        <h1>South East</h1>
+        {% for item in site.data.info.se %}
+        {{item.level}}
+        {% endfor %}
+    {%- elsif page.direction contains 'nw' -%}
+        <h1>North East</h1>
+    {%- elsif page.direction contains 'sw' -%}
+        <h1>South West</h1>
+{%- endif -%}
+<br>
+PAGE URLS
+    {%- if page.url contains 'ne' -%}
+        <h1>North East</h1>
+        {% for item in site.data.info.ne %}
+        {{item.level}}
+        {% endfor %}
+    {%- elsif page.url contains 'se' -%}
+        <h1>South East</h1>
+        {% for item in site.data.info.se %}
+        {{item.level}}
+        {% endfor %}
+    {%- elsif page.url contains 'nw' -%}
+        <h1>North West</h1>
+    {%- elsif page.url contains 'sw' -%}
+        <h1>South West</h1>
+{%- endif -%}
+<br>
+
+
+
+<ul>
+    {% for item in site.data.members %}
+      <li>
+        <a href="https://github.com/{{ member.github }}">
+          {{ item.name }}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+
+
+{% for item in site.data.names.firstnames %}
+    <h1>{{ item }}</h1>
+{% endfor %}
+<br />
+
+{% for gizz in site.data.names %}
+    <h1>{{ gizz.firstnames }}</h1>
+{% endfor %}
+
+
+<!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
+{% for user in site.users %}
+<ul>
+   <h1><li> {{ user }}</li></h1> 
+</ul>
+{% endfor %}
+<br />
+
+{% if page.firstname == "Tobi" %}
+  This text will always appear since "firstname" is defined as Tobi.
+{% endif %}
+<br />
+
+{% assign name = "Tobi" %}
+{% if name %}
+  This text will always appear since "name" is defined aas Tobi.
+{% endif %}
+<br />
+
+
+{% if page.title contains "Awesome" %}
+  This product's title contains the word Awesome.
+{% endif %}
+<br />
+
+{% if page.title == "Awesome Shoes" %}
+  These shoes are awesome!
+{% endif %}
+<!-- Output
+These shoes are awesome!
+unless -->
+<br />
+<!-- The opposite of if – executes a block of code only if a certain condition is not met. -->
+
+<!-- Input -->
+{% unless page.title == "Not Awesome Shoes" %}
+  These shoes are not awesome.
+{% endunless %}
+<br />
+<!-- If customer.name = "anonymous" -->
+{% if page.name == "kevin" %}
+<br /> Hey Kevin!
+{% elsif page.name == "anonymous" %}
+<br />  Hey Anonymous!
+{% else %}
+<br />  Hi Stranger!
+{% endif %}
+
+<br />
+{% assign handle = "cookied" %}
+{% case handle %}
+  {% when "cake" %}
+     This is a cake
+  {% when "cookie", "biscuit" %}
+     This is a cookie
+  {% else %}
+     This is not a cake nor a cookie
+{% endcase %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

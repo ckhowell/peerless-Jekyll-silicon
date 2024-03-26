@@ -1,0 +1,13 @@
+-  firstnames:
+    - Harry
+    - Barry
+    - Jarry
+    - surnames: [Smith, Collins]
+  
+- nickname: Nickname1
+  name: John
+  address: Johnstreet 1
+
+- nickname: Nickname2
+  name: Rudolf
+  address: Rudolfstreet 1  

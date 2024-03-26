@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  cursor: pointer;
+  margin: 0;
+  background-color: black;
+}
+#black {
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  z-index: 900;
+}
+#black-top {
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 900;
+}
+div,
+img {
+  position: absolute;
+  user-select: none;
+  overflow: hidden;
+}

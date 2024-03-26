@@ -6,12 +6,16 @@
   font-family: "B612 Mono", monospace;
   font-weight: 500;
   font-style: normal;
+  background-color: black;
 }
 
 body {
   margin: 0;
 }
-
+/* a {
+  color: rgb(61, 61, 61);
+  text-decoration: none;
+} */
 .horizontal-slider {
   display: flex;
   overflow-x: hidden;
@@ -132,13 +136,126 @@ body {
   transition: opacity var(--duration) ease-out;
   z-index: 100;
 }
-.active {
-  fill: #fff;
-  opacity: 1;
-}
 .menu__item:hover {
   opacity: 1;
 }
 #donut{opacity:0.1;}
 .st7{fill:#FFFFFF;}
 
+/* CSS for active class */
+.menu__item.active {
+  fill: #ff0000; /* Change the fill color for active section */
+}
+
+.active {
+  fill: #fff;
+  opacity: 1;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.levels .item .active .tooltip {
+  background-color: #ffffff;
+  text-decoration: none; /* Change background color for active level tooltip */
+}
+
+
+
+.tabs__nav {
+  display: flex;
+  position: fixed;
+  top:0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.tabs__nav-list {
+  width: 100%;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  z-index: 500;
+}
+
+.tabs__nav-item {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  cursor: pointer;
+  /* padding: 10px 20px;
+  border-radius: 100px; */
+
+}
+.tabs__nav-item.active {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.05s;
+  color: #fff;
+}
+.tabs__nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.tabs__nav-item a:active {
+  color: #fff;
+  background-color: #ffffff5d;
+  /* padding: 10px 20px;
+  border-radius: 100px;
+  text-decoration: none; */
+}
+.tabs__nav-item a:hover {
+  color: #fff;
+  background-color: #ffffff2c;
+  text-decoration: underline;
+}
+
+li.active a {
+  color: #2e2e2e;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+/* 
+.flex-nav ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  position: fixed;
+  top:0;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 160;
+}
+
+.flex-nav li a {
+  color: #fff;
+  padding: 0px 40px;
+}
+
+.flex-nav li a:hover, .flex-nav li a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+.flex-nav li a:active{
+  background-color: rgb(47, 47, 47);
+  text-decoration: none;
+}
+ */

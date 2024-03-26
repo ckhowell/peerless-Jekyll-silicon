@@ -1,6 +1,7 @@
 <div class="side-nav">
-  <nav class="navbar">
+  <nav class="navbar-side">
     <div class="menu">
+
       <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -28,55 +29,64 @@
 
           <circle id="donut" style="opacity: 0.2; fill: url(#donut_00000113335137010935050900000001015468419275396010_)" cx="60" cy="60" r="37.9" />
         </g>
+
         <g id="Quadrants">
           <!-- NORTH WEST -->
           <radialGradient id="NW_00000114763851438405474440000012442751103782160030_" cx="59.5088" cy="59.9512" r="50.6852" gradientUnits="userSpaceOnUse">
             <stop offset="0" style="stop-color: #ffffff" />
             <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
           </radialGradient>
-          <path
-            class="menu__item"
+          {% for section in site.data.navigation.sections %}
+          {% assign section_id = section.name | downcase %}
+          <path class="menu__item{% if page.url contains section_id %} active{% endif %}"
+
             id="NW"
             style="fill: url(#NW_00000114763851438405474440000012442751103782160030_)"
             d="M60,18c-23.2,0-42,18.8-42,42h17
        c0-13.8,11.2-25,25-25V18z"
           />
+
+          {% endfor %}
+
           <!-- NORTH EAST -->
           <radialGradient id="NE_00000085219394941459451250000005747500673747690410_" cx="59.5088" cy="59.9512" r="50.6852" gradientUnits="userSpaceOnUse">
             <stop offset="0" style="stop-color: #ffffff" />
             <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
           </radialGradient>
           <path
-            class="menu__item"
+            class="menu__item{% if page.url contains section_id %} active{% endif %}"
             id="NE"
             style="fill: url(#NE_00000085219394941459451250000005747500673747690410_)"
             d="M102,60c0-23.2-18.8-42-42-42v17
        c13.8,0,25,11.2,25,25H102z"
           />
+
           <!-- SOUTH EAST -->
           <radialGradient id="SE_00000132795592471879311080000015140717837242027392_" cx="59.5088" cy="59.9512" r="50.6852" gradientUnits="userSpaceOnUse">
             <stop offset="0" style="stop-color: #ffffff" />
             <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
           </radialGradient>
           <path
-            class="menu__item"
+            class="menu__item{% if page.url contains section_id %} active{% endif %}"
             id="SE"
             style="fill: url(#SE_00000132795592471879311080000015140717837242027392_)"
             d="M60,102c23.2,0,42-18.8,42-42H85
        c0,13.8-11.2,25-25,25V102z"
           />
+
           <!-- SOUTH WEST -->
           <radialGradient id="SW_00000102516486818712509680000014335767113232881058_" cx="59.5088" cy="59.9512" r="50.6852" gradientUnits="userSpaceOnUse">
             <stop offset="0" style="stop-color: #ffffff" />
             <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
           </radialGradient>
           <path
-            class="menu__item"
+            class="menu__item{% if page.url contains section_id %} active{% endif %}"
             id="SW"
             style="fill: url(#SW_00000102516486818712509680000014335767113232881058_)"
             d="M18,60c0,23.2,18.8,42,42,42V85
        c-13.8,0-25-11.2-25-25H18z"
           />
+
           <!-- NORTH -->
           <radialGradient
             id="North_00000145032022784767595880000012989341309483153590_"
@@ -90,25 +100,28 @@
             <stop offset="0.8228" style="stop-color: #ffffff; stop-opacity: 0" />
           </radialGradient>
           <path
-            class="menu__item active"
-            id="North"
+            class="menu__item{% if page.url contains section_id %} active{% endif %}"
+            id="n"
             style="fill: url(#North_00000145032022784767595880000012989341309483153590_)"
             d="M35,60c0-13.8,11.2-25,25-25
        c13.8,0,25,11.2,25,25H35z"
           />
+
           <!-- SOUTH -->
           <radialGradient id="South_00000098902015343643463830000017161695652808469404_" cx="59.73" cy="60.0618" r="25.3559" gradientUnits="userSpaceOnUse">
             <stop offset="0" style="stop-color: #ffffff" />
             <stop offset="0.9683" style="stop-color: #ffffff; stop-opacity: 0" />
           </radialGradient>
           <path
-            class="menu__item"
+            class="menu__item{% if page.url contains section_id %} active{% endif %}"
             id="South"
             style="fill: url(#South_00000098902015343643463830000017161695652808469404_)"
             d="M85,60c0,13.8-11.2,25-25,25
        S35,73.8,35,60H85z"
           />
         </g>
+
+
         <g id="EW-Letter">
           <g id="WE_Letters">
             <g>
@@ -147,92 +160,29 @@
          z"
             />
           </g>
-        </g>
+        </g>a
         <g id="center">
           <circle id="center_dot" class="st7" cx="60" cy="60" r="4.7" />
         </g>
-      </svg>
+      </svg> 
+       <!-- End of sections loop --> 
     </div>
     <!-- LEVELS -->
+
+    <!-- Loop through levels within each section -->
+    {% for item in site.data.info.ne %}
     <div class="levels">
-      <div class="item" tabindex="0">
-        <div class="tooltip active">
-          <span class="text ">26</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">25</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">24</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">22</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">20</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">18</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">16</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">14</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">12</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">10</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">08</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">06</span>
-        </div>
-        <div class="circle"></div>
-      </div>
-      <div class="item" tabindex="0">
-        <div class="tooltip">
-          <span class="text">04</span>
-        </div>
-        <div class="circle"></div>
+      <!-- Output level-specific content -->
+      <div>
+        <a class="{%- if page.url == item.link -%} active {% endif %}" href="{{item.link}}">
+          <div class="tooltip">
+            <span class="text">{{ item.level }}</span>
+          </div>
+          <div class="circle"></div>
+        </a>
       </div>
     </div> 
+    {% endfor %} <!-- End of levels loop -->
+
   </nav>
 </div>
