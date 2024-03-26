@@ -24,17 +24,16 @@ body {
   padding: var(--image-padding) 0;
 }
 
-a {
-  text-decoration: none;
-}
 .horizontal-slider img {
   height: 100%;
   padding-left: var(--image-padding);
   width: auto;
 }
-
 .horizontal-slider img:last-child {
   padding-right: var(--image-padding);
+}
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -186,7 +185,7 @@ html {
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: #FF0000;
+  background: #ffffff;
 }
 
 .levels .item .active .tooltip {
@@ -223,10 +222,6 @@ html {
   text-decoration: none;
 }
 
-/* .tabs__nav-item a:active {
-  color: #fff;
-  background-color: #ffffff5d;
-} */
 .tabs__nav-item a:hover {
   text-decoration: underline;
 }
@@ -245,32 +240,3 @@ li.active a:hover {
   border-radius: 100px;
   text-decoration: none;
 }
-
-/* 
-.flex-nav ul {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 20px 0;
-  display: flex;
-  position: fixed;
-  top:0;
-  flex-direction: row;
-  justify-content: center;
-  z-index: 160;
-}
-
-.flex-nav li a {
-  color: #fff;
-  padding: 0px 40px;
-}
-
-.flex-nav li a:hover, .flex-nav li a:focus {
-  color: #fff;
-  text-decoration: underline;
-}
-.flex-nav li a:active{
-  background-color: rgb(47, 47, 47);
-  text-decoration: none;
-}
- */

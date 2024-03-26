@@ -5,117 +5,96 @@
     {% include navtop.html %}
     {% include levels.html %}
 
-
   {%- if page.url contains 'northeast' -%}
     {% for item in site.data.info.ne %}
     {%- if page.url == item.link -%}
       <div class="horizontal-slider scrollable-content">
-      <img src="{{site.baseurl}}/{{item.img}}" />
+        <img id="panoramicImage" src="{{site.baseurl}}/{{item.img}}" />
       </div>
-      {% endif %}
+    {%- endif %}
     {% endfor %}
 
     {%- elsif page.url contains 'southwest' -%}
     {% for item in site.data.info.sw %}
     {%- if page.url == item.link -%}
       <div class="horizontal-slider scrollable-content">
-      <img src="{{site.baseurl}}/{{item.img}}" />
+        <img id="panoramicImage" src="{{site.baseurl}}/{{item.img}}" />
       </div>
-      {% endif %}
+    {%- endif %}
     {% endfor %} 
 
     {%- elsif page.url contains 'southeast' -%}
     {% for item in site.data.info.se %}
     {%- if page.url == item.link -%}
       <div class="horizontal-slider scrollable-content">
-      <img src="{{site.baseurl}}/{{item.img}}" />
+        <img id="panoramicImage" src="{{site.baseurl}}/{{item.img}}" />
       </div>
-      {% endif %}
+    {%- endif %}
     {% endfor %}
 
   {%- elsif page.url contains 'northwest' -%}
     {% for item in site.data.info.nw %}
     {%- if page.url == item.link -%}
       <div class="horizontal-slider scrollable-content">
-      <img src="{{site.baseurl}}/{{item.img}}" />
+        <img id="panoramicImage" src="{{site.baseurl}}/{{item.img}}" />
       </div>
-      {% endif %}
+    {%- endif %}
     {% endfor %}
 
   {%- elsif page.url contains 'north' -%}
     {% for item in site.data.info.nn %}
     {%- if page.url == item.link -%}
       <div class="horizontal-slider scrollable-content">
-      <img src="{{site.baseurl}}/{{item.img}}" />
+        <img id="panoramicImage" src="{{site.baseurl}}/{{item.img}}" />
       </div>
-      {% endif %}
+    {%- endif %}
     {% endfor %}
 
   {%- elsif page.url contains 'south' -%}
     {% for item in site.data.info.ss %}
     {%- if page.url == item.link -%}
       <div class="horizontal-slider scrollable-content">
-      <img src="{{site.baseurl}}/{{item.img}}" />
+        <img id="panoramicImage" src="{{site.baseurl}}/{{item.img}}" />
       </div>
-      {% endif %}
+    {%- endif %}
     {% endfor %}
-
-
-
-
-  
   {%- endif -%}
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
-      var sliderImages = gsap.utils.toArray(".horizontal-slider img");
+      window.addEventListener('load', function() {
+        // Get references to the image and its container
+        var image = document.getElementById('panoramicImage');
+        var container = document.querySelector('.horizontal-slider');
 
-      var getTotalWidth = () => {
-        totalWidth = 0;
-        sliderImages.forEach((image) => {
-          totalWidth += image.offsetWidth;
+        // Calculate the horizontal center position of the image
+        var centerX = (image.offsetWidth - container.offsetWidth) / 2;
+
+        // Scroll the container to the center
+        container.scrollLeft = centerX;
+
+        // Add mouse wheel event listener for horizontal panning
+        container.addEventListener('wheel', function(event) {
+          event.preventDefault(); // Prevent default scrolling behavior
+
+          // Calculate the amount to scroll horizontally
+          var scrollAmount = event.deltaY;
+
+          // Scroll the container horizontally
+          container.scrollLeft += scrollAmount;
         });
-      };
-
-      getTotalWidth();
-      ScrollTrigger.addEventListener("refreshInit", getTotalWidth);
-
-      gsap.to(sliderImages, {
-        scrollTrigger: {
-          trigger: ".horizontal-slider",
-          start: "top top",
-          end: () => `+=${totalWidth}`,
-          pin: true,
-          scrub: true,
-          invalidateOnRefresh: true,
-        },
-        x: () => `-${totalWidth - document.documentElement.clientWidth}`,
       });
     </script>
-<!-- RESIZE ON REFRESH -->
+
     <script>
       $(window).bind("resize", function () {
         window.location.href = window.location.href;
       });
     </script>
-<!-- CHECK FOR ACTIVE -->
-    <!-- <script>
-      const navLinkEls = document.querySelectorAll(".menu__item");
-      navLinkEls.forEach((navLinkEl) => {
-        navLinkEl.addEventListener("click", () => {
-          document.querySelector(".active")?.classList.remove("active");
-          navLinkEl.classList.add("active");
-        });
-      });
-    </script> -->
-
   </body>
 </html>
