@@ -200,10 +200,6 @@ nn:
     link: /north/36/
     img: assets/img/n_36.jpg
     title: North Level 36
-  - level: 35
-    link: /north/35/
-    img: assets/img/n_36.jpg
-    title: North Level 35
   - level: 34
     link: /north/34/
     img: assets/img/n_34.jpg
@@ -245,10 +241,6 @@ ss:
     link: /south/36/
     img: assets/img/s_36.jpg
     title: South Level 36
-  - level: 35
-    link: /south/35/
-    img: assets/img/s_35.jpg
-    title: South Level 35
   - level: 34
     link: /south/34/
     img: assets/img/s_34.jpg
