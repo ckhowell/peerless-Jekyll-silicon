@@ -1,11 +1,11 @@
 {
-  "name": "silicon-bootstrap-jekyll",
+  "name": "Peerless Views",
   "version": "1.2.0",
   "description": "Bootstrap 5 Template with Jekyll",
   "main": "index.html",
   "scripts": {
     "build": "jekyll build && gulp build",
-    "serve": "bundle exec jekyll serve && gulp"  
+    "serve": "bundle exec jekyll serve && gulp"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +24,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
+    "pagecrypt": "^6.1.1",
     "sass": "^1.52.2"
   },
   "dependencies": {
