@@ -24,7 +24,6 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
-    "pagecrypt": "^6.1.1",
     "sass": "^1.52.2"
   },
   "dependencies": {
@@ -42,6 +41,7 @@
     "rellax": "^1.12.1",
     "shufflejs": "^6.0.0",
     "smooth-scroll": "^16.1.3",
+    "staticrypt": "^3.4.0",
     "swiper": "^8.2.2",
     "vanilla-tilt": "^1.7.2"
   },
