@@ -1,10 +1,10 @@
-title: Arrow Executive Sales
-email: "hello@arrowexec.com.au"
-phone: "07 3303 0845"
+title: Peerless Residences
+email: ""
+phone: ""
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://arrowexec.com.au" # the base hostname & protocol for your site, e.g. http://example.com
-google_analytics: UA-165678042-1
+url: "https://39peerless.com.au" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: 
 
 # Permalinks
 permalink: pretty

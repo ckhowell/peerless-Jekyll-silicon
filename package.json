@@ -4,7 +4,7 @@
   "description": "Bootstrap 5 Template with Jekyll",
   "main": "index.html",
   "scripts": {
-    "build": "jekyll build && gulp build && npx staticrypt _site/index.html P@SSW0RD -o _site/index.html",
+    "build": "jekyll build && gulp build && npx staticrypt _site/index.html -p 39sales -o _site/index.html --short",
     "serve": "bundle exec jekyll serve && gulp"
   },
   "author": "",
