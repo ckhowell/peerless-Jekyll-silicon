@@ -4,7 +4,7 @@
   "description": "Bootstrap 5 Template with Jekyll",
   "main": "index.html",
   "scripts": {
-    "build": "jekyll build && npx staticrypt _site/north/36/index.html -p sales -d _site/login --short --template-color-secondary "#000" && gulp build",    
+    "build": "jekyll build && npx staticrypt _site/north/36/index.html --template-color-secondary "#000000" -p sales -d _site/login --short && gulp build",    
     "serve": "bundle exec jekyll serve && gulp"
   },
   "author": "",
