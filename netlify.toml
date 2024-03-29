@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/view/*"
+  status = 200
+  force = true
+  conditions = {Role = ["pro"]}
+
+[[redirects]]
+  from = "/view/*"
+  to = "/login/"
+  status = 302
+  force = true
