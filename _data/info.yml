@@ -20,6 +20,10 @@ ne:
     link: /northeast/18/
     img: assets/img/ne_18.jpg
     title: North East Level 18    
+  - level: 18
+    link: /northeast/18tw/
+    img: assets/img/ne_18tw.jpg
+    title: North East Level 18 Twilight   
   - level: 16
     link: /northeast/16/
     img: assets/img/ne_16.jpg
@@ -36,6 +40,10 @@ ne:
     link: /northeast/10/
     img: assets/img/ne_10.jpg
     title: North East Level 10
+  - level: 10
+    link: /northeast/10tw/
+    img: assets/img/ne_10tw.jpg
+    title: North East Level 10 Twilight
   - level: "08"
     link: /northeast/08/
     img: assets/img/ne_8.jpg
@@ -69,6 +77,10 @@ nw:
     link: /northwest/18/
     img: assets/img/nw_18.jpg
     title: North West Level 18    
+  - level: 18
+    link: /northwest/18tw/
+    img: assets/img/nw_18tw.jpg
+    title: North West Level 18 Twilight   
   - level: 16
     link: /northwest/16/
     img: assets/img/nw_16.jpg
@@ -85,6 +97,10 @@ nw:
     link: /northwest/10/
     img: assets/img/nw_10.jpg
     title: North West Level 10
+  - level: 10
+    link: /northwest/10tw/
+    img: assets/img/nw_10tw.jpg
+    title: North West Level 10 Twilight
   - level: "08"
     link: /northwest/08/
     img: assets/img/nw_8.jpg
@@ -118,6 +134,10 @@ se:
     link: /southeast/18/
     img: assets/img/se_18.jpg
     title: South East Level 18    
+  - level: 18
+    link: /southeast/18tw/
+    img: assets/img/se_18tw.jpg
+    title: North West Level 18 Twilight       
   - level: 16
     link: /southeast/16/
     img: assets/img/se_16.jpg
@@ -134,6 +154,10 @@ se:
     link: /southeast/10/
     img: assets/img/se_10.jpg
     title: South East Level 10
+  - level: 10
+    link: /southeast/10tw/
+    img: assets/img/se_10tw.jpg
+    title: South East Level 10 Twilight
   - level: "08"
     link: /southeast/08/
     img: assets/img/se_8.jpg
@@ -167,6 +191,10 @@ sw:
     link: /southwest/18/
     img: assets/img/sw_18.jpg
     title: South West Level 18    
+  - level: 18
+    link: /southwest/18tw/
+    img: assets/img/sw_18tw.jpg
+    title: South West Level 18 Twilight   
   - level: 16
     link: /southwest/16/
     img: assets/img/sw_16.jpg
@@ -183,6 +211,10 @@ sw:
     link: /southwest/10/
     img: assets/img/sw_10.jpg
     title: South West Level 10
+  - level: 10
+    link: /southwest/10tw/
+    img: assets/img/sw_10tw.jpg
+    title: South West Level 10 Twilight
   - level: "08"
     link: /southwest/08/
     img: assets/img/sw_8.jpg
@@ -200,6 +232,10 @@ nn:
     link: /north/36/
     img: assets/img/n_36.jpg
     title: North Level 36
+  - level: 36
+    link: /north/36tw/
+    img: assets/img/n_36tw.jpg
+    title: North Level 36 Twilight
   - level: 34
     link: /north/34/
     img: assets/img/n_34.jpg
@@ -220,6 +256,10 @@ nn:
     link: /north/30/
     img: assets/img/n_30.jpg
     title: North Level 30
+  - level: 30
+    link: /north/30tw/
+    img: assets/img/n_30tw.jpg
+    title: North Level 30 Twilight
   - level: 29
     link: /north/29/
     img: assets/img/n_29.jpg
@@ -241,6 +281,10 @@ ss:
     link: /south/36/
     img: assets/img/s_36.jpg
     title: South Level 36
+  - level: 36
+    link: /south/36tw/
+    img: assets/img/s_36tw.jpg
+    title: South Level 36 Twilight
   - level: 34
     link: /south/34/
     img: assets/img/s_34.jpg
@@ -261,6 +305,10 @@ ss:
     link: /south/30/
     img: assets/img/s_30.jpg
     title: South Level 30
+  - level: 30
+    link: /south/30tw/
+    img: assets/img/s_30tw.jpg
+    title: South Level 30 Twilight
   - level: 29
     link: /south/29/
     img: assets/img/s_29.jpg
